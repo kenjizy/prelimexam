@@ -42,6 +42,23 @@
 
         </form>
     </div>
+
+    <script>
+        document.getElementById("signin-container").addEventListener("submit", function(event){
+            event.preventDefault;
+
+            var username = document.getElementById("username").values;
+            var password = document.getElementById("password").values;
+            
+            if (username == "kentmark" && password == "code"){
+                window.location.assign = "notes.html";
+            }
+            else{
+                alert("invalid username and password. Please try again");
+            }
+    
+        });
+    </script>
 </main>
 </body>
 </html>

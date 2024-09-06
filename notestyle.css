@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background-color: #00c49a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .logo h1 {
+  display: flex;
+  font-size: 2.3em;
+  font-weight: 900;
+  color: black;
+  font-family: sans-serif;
+  margin-left: 35px;
+  margin-top: 15px;
+}
+.logo h1{
+    color: black;
+}
+
+.logo span {
+  color: white;
+}
+.nav{
+margin-top: auto;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: -100%;
+}
+
+.sidebar nav ul li {
+  margin: 5px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 5px 30px;
+  transition: background-color 0.3s, color 0.3s;
+  width: 76%;
+  height: 30px;
+}
+
+.sidebar nav ul li a i {
+  color: whitesmoke;
+  margin-right: 15px;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #007a5e;
+  color: whitesmoke;
+}
+
+.sidebar nav ul li a:hover i {
+  color: whitesmoke;
+}
+
+.sidebar .footer {
+  display: flex;
+  align-items: center;
+}
+.sidebar .footer p{
+    color: black;
+
+}
+
+.sidebar .status {
+  width: 45px;
+  height: 45px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: -10px;
+}
+
+.search input {
+  border-radius: 10px;
+  border: solid 1px;
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.add-note {
+  background-color: whitesmoke;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-note i {
+  margin-left: -50px;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+.note-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  border: none;
+  margin-left: 100px;
+  font-size: larger;
+}
+
+.note-card h3 {
+  margin-top: 0;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.yellow {
+  background-color: #ffba08;
+}
