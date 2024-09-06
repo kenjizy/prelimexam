@@ -15,7 +15,7 @@
     </div>
     
     <nav>
-        <a href="#">Home</a>
+        <a href="home.html">Home</a>
         <a href="#">Register</a>
         <a href="#">Sign In</a>
     </nav>
@@ -35,30 +35,16 @@
             </div>
             <div class="checkbox-group">
                 <input type="checkbox" id="signin-check" name="signin-check">
-                <label for="signin-check">Sigin Me In</label>
+                <label for="signin-check">Sign Me In</label>
             </div>
+
+            <a href="notes.html"><button type="submit" class="button">Sign In</a>
+            </button> 
             <a href="#" class="forgot-password">Forgot Password?</a>
-            <button type="submit">Sign In</button>
+           
 
         </form>
     </div>
-
-    <script>
-        document.getElementById("signin-container").addEventListener("submit", function(event){
-            event.preventDefault;
-
-            var username = document.getElementById("username").values;
-            var password = document.getElementById("password").values;
-            
-            if (username == "kentmark" && password == "code"){
-                window.location.assign = "notes.html";
-            }
-            else{
-                alert("invalid username and password. Please try again");
-            }
-    
-        });
-    </script>
 </main>
 </body>
 </html>

@@ -1,8 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  padding: 0;
+  margin: 0;
 }
 .container {
   display: flex;
@@ -22,7 +20,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
+.sidebar span{
+  color: white;
+}
 .sidebar .logo h1 {
   display: flex;
   font-size: 2.3em;
@@ -32,17 +32,13 @@
   margin-left: 35px;
   margin-top: 15px;
 }
-.logo h1{
-    color: black;
-}
 
-.logo span {
-  color: white;
+.logos span {
+  color: whitesmoke;
 }
-.nav{
-margin-top: auto;
+.sidebar h1{
+  color: black;
 }
-
 .sidebar nav ul {
   list-style-type: none;
   padding: 0;
@@ -78,19 +74,16 @@ margin-top: auto;
   color: whitesmoke;
 }
 
-.sidebar .footer {
+.sidebar .user {
   display: flex;
   align-items: center;
-}
-.sidebar .footer p{
-    color: black;
-
+  color: black;
 }
 
 .sidebar .status {
   width: 45px;
   height: 45px;
-  background-color: whitesmoke;
+  background-color:whitesmoke;
   border-radius: 50%;
   margin-right: 10px;
   margin-left: 30px;
