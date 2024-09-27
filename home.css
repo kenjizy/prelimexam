@@ -106,3 +106,21 @@ nav ul li a:hover {
 .btn:hover {
   background-color: #00b08a;
 }
+
+@media (max-width: 1920px) {
+  .navbar {
+    
+      align-items: flex-start;
+  }
+  .navbar .nav-links {
+     
+      gap: 10px;
+  }
+  .main-content {
+     
+      height: auto;
+  }
+  .main-content .text-container {
+      margin-top: 20px;
+  }
+}
